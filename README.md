@@ -27,10 +27,10 @@ The project utilises the [ParrelSync](https://github.com/VeriorPies/ParrelSync) 
 The examples are located in the project hierarchy under `Assets/Examples` where they're grouped by most relevant category. This is the typical example folder structure:
 
 /AnExample
-├── Controllers/
-├── Entities/
-├── Prefabs/
-├── Scenes/
+── Controllers
+── Entities
+── Prefabs
+── Scenes
 
 Each example is run as follows:
 
