@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Examples/LocalPlayer/GetLocalPlayerOnConnection/Scenes/GetLocalPlayerOnConnectionScene.unity
     guid: f465e66f03e2d409baf07cde551a4f8c
+  - enabled: 1
+    path: Assets/Examples/Spawning/PassNetworkBehaviourReferenceByNetworkVariable/Scenes/PassSpawnedObjectReferenceToClientScene.unity
+    guid: 25a0b11efa373495bb913ae6746a051b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
