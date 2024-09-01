@@ -50,6 +50,8 @@ Each example is run as follows:
 
 [GetLocalPlayerOnConnection](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/LocalPlayer/GetLocalPlayerOnConnection) - Gets the local Player object when the client connects.
 
+[PassNetworkBehaviourReferenceByNetworkVariable](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Spawning/PassNetworkBehaviourReferenceByNetworkVariable) - Passes a spawned object's reference to the client by way of an in-scene network object's network variable field.
+
 ###  Notes
 
 If you are using ParrelSync in your own projects and the clone won't connect due to a NetworkConfig mismatch this is most likely due to the NetworkManager's Network Prefab List not always sync'ing with the clone. A quick fix for this is to untick Force Same Prefabs on the original project's NetworkManager.
