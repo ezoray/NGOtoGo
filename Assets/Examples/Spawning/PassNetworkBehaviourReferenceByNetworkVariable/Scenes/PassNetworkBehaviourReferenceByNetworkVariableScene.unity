@@ -118,74 +118,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &82267184
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 82267187}
-  - component: {fileID: 82267186}
-  - component: {fileID: 82267185}
-  m_Layer: 0
-  m_Name: SpawnObjectPrefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &82267185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82267184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 848987838
-  InScenePlacedSourceGlobalObjectIdHash: 0
-  DeferredDespawnTick: 0
-  Ownership: 1
-  AlwaysReplicateAsRoot: 0
-  SynchronizeTransform: 1
-  ActiveSceneSynchronization: 0
-  SceneMigrationSynchronization: 1
-  SpawnWithObservers: 1
-  DontDestroyWithOwner: 0
-  AutoObjectParentSync: 1
---- !u!114 &82267186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82267184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae34bfbabe7f14445890eb343e2001b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &82267187
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82267184}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &260346824
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,8 +307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de6447bba3507436ea39d3336fd9fced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inSceneObject: {fileID: 0}
-  spawnPrefab: {fileID: 0}
+  inSceneObject: {fileID: 1345809588}
+  spawnPrefab: {fileID: 1044721756737966758, guid: 8af01cff3c6c94e1bad82cabfd8f0ee8, type: 3}
 --- !u!4 &1477906469
 Transform:
   m_ObjectHideFlags: 0
@@ -457,7 +389,7 @@ MonoBehaviour:
     PlayerPrefab: {fileID: 0}
     Prefabs:
       NetworkPrefabsLists:
-      - {fileID: 11400000, guid: eafb836dda3a14741b0d2c12c0f09d8f, type: 2}
+      - {fileID: 11400000, guid: 1f7dccbb5778f490db4ea2481ba0d598, type: 2}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
@@ -503,4 +435,3 @@ SceneRoots:
   - {fileID: 1477906469}
   - {fileID: 1908415126}
   - {fileID: 1345809589}
-  - {fileID: 82267187}
