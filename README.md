@@ -54,7 +54,9 @@ Each example is run as follows:
 
 [PassNetworkBehaviourReferenceByNetworkVariable](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Spawning/PassNetworkBehaviourReferenceByNetworkVariable) - Passes a spawned object's network behaviour reference to the client by way of an in-scene network object's network variable field.
 
-[SpawnObjectOnRequestAndPassNetworkObjectReferenceByRpc](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Spawning/SpawnObjectOnRequestAndPassNetworkObjectReferenceByRpc) - An RPC is used to spawn a network object on the host and its NetworkObjectReference is then RPC'ed to all connected to provide a reference to it. 
+[SpawnObjectOnRequestAndPassNetworkObjectReferenceByRpc](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Spawning/SpawnObjectOnRequestAndPassNetworkObjectReferenceByRpc) - An RPC is used to spawn a network object on the host and its NetworkObjectReference is then RPC'ed to all connected to provide a reference to it.
+
+[ListenForObjectSpawnEvents](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Spawning/ListenForObjectSpawnEvents) - Uses an abstract class derived from NetworkBehaviour providing a static Action which is subscribed to by a listener in the scene, when a network object is spawned the Action is invoked.
 
 ###  Notes
 
