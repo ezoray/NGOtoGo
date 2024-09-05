@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Examples/Messaging/SendAndReceiveUnnamedMessages/Scenes/SendAndReceiveUnnamedMessagesScene.unity
     guid: 33855de6ab3dc4ecfb79729d0f079395
+  - enabled: 1
+    path: Assets/Examples/Messaging/SendAndReceiveNamedMessages/Scenes/SendAndReceiveNamedMessagesScene.unity
+    guid: 05296254348b64e08bff7484cf82356b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
