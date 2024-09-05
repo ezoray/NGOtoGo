@@ -62,6 +62,8 @@ Each example is run as follows:
 
 [DeferApprovalOnClientConnection](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Connection/DeferApprovalOnClientConnection) - Connecting clients approval is set as Pending in Connection Approval, the host decides on allowing the connection in the UI.
 
+[SendAndReceiveUnnamedMessages](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Messaging/SendAndReceiveUnnamedMessages) - Send and receive custom unnamed messages by way of the UI.
+
 ###  Notes
 
 If you are using ParrelSync in your own projects and the clone won't connect due to a NetworkConfig mismatch this is most likely due to the NetworkManager's Network Prefab List not always sync'ing with the clone. A quick fix for this is to untick Force Same Prefabs on the original project's NetworkManager.
