@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Examples/Spawning/ListenForObjectSpawnEvents/Scenes/ListenForObjectSpawnEventsScene.unity
     guid: 854f92dfc51e4472d9923da609334da0
+  - enabled: 1
+    path: Assets/Examples/Connection/PassChosenPlayerOnConnection/Scenes/PassChosenPlayerOnConnectionScene.unity
+    guid: d1766347631a646c78c28a85ffd0ff45
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -58,6 +58,8 @@ Each example is run as follows:
 
 [ListenForObjectSpawnEvents](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Spawning/ListenForObjectSpawnEvents) - Uses an abstract class derived from NetworkBehaviour providing a static Action which is subscribed to by a listener in the scene, when a network object is spawned the Action is invoked.
 
+[PassChosenPlayerOnConnection](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Connection/PassChosenPlayerOnConnection) - The client passes the hash for the Player object they wish to use on connection, this is matched and approved in Connection Approval.
+
 ###  Notes
 
 If you are using ParrelSync in your own projects and the clone won't connect due to a NetworkConfig mismatch this is most likely due to the NetworkManager's Network Prefab List not always sync'ing with the clone. A quick fix for this is to untick Force Same Prefabs on the original project's NetworkManager.
