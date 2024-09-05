@@ -7,7 +7,7 @@ namespace NGOtoGo.Examples.Messaging.SendAndReceiveUnnamedMessages
 {
     /// <summary>
     /// Send and receive unnamed messages.
-    /// Subscribes to receive unnamed messages on connection.
+    /// On connection subscribes to receive unnamed messages.
     /// Messages to send are input and received messages output on the UI.
     /// </summary>
     public class SceneController : MonoBehaviour
@@ -46,6 +46,9 @@ namespace NGOtoGo.Examples.Messaging.SendAndReceiveUnnamedMessages
 
         private void OnReceiveMessage(ulong clientId, FastBufferReader reader)
         {
+            if (networkManager.IsHost && clientId == NetworkManager.ServerClientId)
+                return;
+
             reader.ReadValueSafe(out string message);
 
             Debug.Log($"SceneController OnReceiveMessage: {message}");
@@ -68,13 +71,7 @@ namespace NGOtoGo.Examples.Messaging.SendAndReceiveUnnamedMessages
 
                 if (networkManager.IsHost)
                 {
-                    foreach (var clientId in networkManager.ConnectedClientsIds)
-                    {
-                        if (clientId != NetworkManager.ServerClientId)
-                        {
-                            messagingManager.SendUnnamedMessage(clientId, writer);
-                        }
-                    }
+                    messagingManager.SendUnnamedMessageToAll(writer);
                 }
                 else
                 {
@@ -109,13 +106,19 @@ namespace NGOtoGo.Examples.Messaging.SendAndReceiveUnnamedMessages
         {
             Debug.Log($"SceneController OnClientDisconnect: {clientId}");
 
+            if (networkManager.IsHost && clientId != NetworkManager.ServerClientId)
+                return;
+
             messagingManager.OnUnnamedMessage -= OnReceiveMessage;
         }
 
-
         private void EnableGui(bool enable)
         {
-            receivedText.text = enable ? string.Empty : receivedText.text;
+            if (enable)
+            {
+                receivedText.text = string.Empty;
+            }
+
             inputText.interactable = enable;
         }
 
