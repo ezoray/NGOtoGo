@@ -60,6 +60,8 @@ Each example is run as follows:
 
 [PassChosenPlayerOnConnection](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Connection/PassChosenPlayerOnConnection) - The client passes the hash for the Player object they wish to use on connection, this is matched and approved in Connection Approval.
 
+[DeferApprovalOnClientConnection](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Connection/DeferApprovalOnClientConnection) - Connecting clients approval is set as Pending in Connection Approval, the host decides on allowing the connection in the UI.
+
 ###  Notes
 
 If you are using ParrelSync in your own projects and the clone won't connect due to a NetworkConfig mismatch this is most likely due to the NetworkManager's Network Prefab List not always sync'ing with the clone. A quick fix for this is to untick Force Same Prefabs on the original project's NetworkManager.
