@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Examples/Connection/DeferApprovalOnClientConnection/Scenes/DeferApprovalOnClientConnectionScene.unity
     guid: 5a852e1998fd84dfb93ce1c390519c3e
+  - enabled: 1
+    path: Assets/Examples/Messaging/SendAndReceiveUnnamedMessages/Scenes/SendAndReceiveUnnamedMessagesScene.unity
+    guid: 33855de6ab3dc4ecfb79729d0f079395
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
