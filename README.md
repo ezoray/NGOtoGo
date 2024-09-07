@@ -66,6 +66,8 @@ Each example is run as follows:
 
 [SendAndReceiveNamedMessages](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Messaging/SendAndReceiveNamedMessages) - Send and receive messages on a specific named channel by way of the UI.
 
+[SubscribeToNetworkEvents](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Events/SubscribeToNetworkEvents) - Subscribes to and logs network events to give an idea of the network lifecycle and sequence of network events.
+
 ###  Notes
 
 If you are using ParrelSync in your own projects and the clone won't connect due to a NetworkConfig mismatch this is most likely due to the NetworkManager's Network Prefab List not always sync'ing with the clone. A quick fix for this is to untick Force Same Prefabs on the original project's NetworkManager.
