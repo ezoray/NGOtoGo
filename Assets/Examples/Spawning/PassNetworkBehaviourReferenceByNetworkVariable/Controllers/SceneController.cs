@@ -48,8 +48,6 @@ namespace NGOtoGo.Examples.Spawning.PassNetworkBehaviourReferenceByNetworkVariab
             {
                 networkManager.OnClientConnectedCallback -= OnClientConnected;
             }
-
-            networkManager.Shutdown();
         }
     }
 }

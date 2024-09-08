@@ -35,10 +35,5 @@ namespace NGOtoGo.Examples.Spawning.SpawnObjectOnRequestAndPassNetworkObjectRefe
                 inSceneObject.SpawnObjectRpc();
             }
         }
-
-        private void OnDestroy()
-        {
-            networkManager.Shutdown();
-        }
     }
 }

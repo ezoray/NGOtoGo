@@ -45,8 +45,6 @@ namespace NGOtoGo.Examples.Spawning.PassNetworkObjectReferenceByNetworkVariable
             {
                 networkManager.OnClientConnectedCallback -= OnClientConnected;
             }
-
-            networkManager.Shutdown();
         }
     }
 }

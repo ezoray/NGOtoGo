@@ -57,8 +57,6 @@ namespace NGOtoGo.Examples.LocalPlayer.GetLocalPlayerOnConnection
             {
                 networkManager.OnClientConnectedCallback -= OnClientConnected;
             }
-
-            networkManager.Shutdown();
         }
     }
 }
