@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 namespace NGOtoGo.Examples.Events.SubscribeToNetworkEvents
 {
     /// <summary>
-    ///  Subscribes to network events to give demonstrate when and where called
+    ///  Subscribes to network events to demonstrate when and where they're called.
     /// </summary>
     public class SceneController : MonoBehaviour
     {
