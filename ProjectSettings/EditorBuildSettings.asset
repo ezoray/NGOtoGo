@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Examples/NetworkVariables/NetworkVariablePermissions/Scenes/NetworkVariablePermissionsScene.unity
     guid: 3e02e5306b9de4e46b4aa2c2feb8b828
+  - enabled: 1
+    path: Assets/Examples/NetworkLists/NetworkListEvents/Scenes/NetworkEventScenes.unity
+    guid: 03d6b7f14195d4539834314ec99b7179
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
