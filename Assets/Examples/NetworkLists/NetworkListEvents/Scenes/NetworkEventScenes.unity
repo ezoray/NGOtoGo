@@ -2447,7 +2447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79e146a54ebef48fc9b2bad894078303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listReadPermission: 0
+  listReadPermission: 1
   listWritePermission: 1
   countText: {fileID: 1676160704}
 --- !u!4 &1440343538

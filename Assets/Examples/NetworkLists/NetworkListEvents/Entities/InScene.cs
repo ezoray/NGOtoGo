@@ -8,7 +8,7 @@ namespace NGOtoGo.Examples.NetworkLists.NetworkListEvents
     /// <summary>
     /// In-scene network object containing the network list.
     /// Subscribes to the list's OnListChanged and logs the network list change events.
-    /// Read/write permissions can changed in the inspector.
+    /// Read/write permissions can be changed in the inspector.
     /// </summary>
     public class InScene : NetworkBehaviour
     {
