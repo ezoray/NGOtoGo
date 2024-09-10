@@ -36,6 +36,11 @@ namespace NGOtoGo.Examples.NetworkVariables.NetworkVariablePermissions
             Debug.Log("InScene OnNetworkSpawn ownerReadOwnerWrite_4: " + ownerReadOwnerWrite_4.Value);
         }
 
+        private void Start()
+        {
+            Debug.Log("InScene Start");
+        }
+
         public override void OnLostOwnership()
         {
             Debug.Log("InScene OnLostOwnership:" + OwnerClientId);
@@ -64,6 +69,14 @@ namespace NGOtoGo.Examples.NetworkVariables.NetworkVariablePermissions
         private void OnAnyReadHostWriteChanged(int previousValue, int newValue)
         {
             Debug.Log($"InScene OnValueChanged anyReadHostWrite_1: oldValue: {previousValue} newValue: {newValue}");
+        }
+
+        public override void OnNetworkDespawn()
+        {
+            anyReadHostWrite_1.OnValueChanged -= OnAnyReadHostWriteChanged;
+            ownerReadHostWrite_2.OnValueChanged -= OnOwnerReadHostWriteChanged;
+            anyReadOwnerWrite_3.OnValueChanged -= OnAnyReadOwnerWriteChanged;
+            ownerReadOwnerWrite_4.OnValueChanged -= OnOwnerReadOwnerWriteChanged;
         }
 
         public int AnyReadHostWrite_1 { get => anyReadHostWrite_1.Value; set => anyReadHostWrite_1.Value = value; }

@@ -37,14 +37,10 @@ namespace NGOtoGo.Examples.NetworkVariables.NetworkVariablePermissions
         {
             // only host can change ownership, doing so on client will result in an error
 
-            IReadOnlyList<ulong> connectedClientsIds = networkManager.ConnectedClientsIds;
-
-            foreach(var clientId in connectedClientsIds)
+            foreach(var clientId in networkManager.ConnectedClientsIds)
             {
                 if(inSceneObject.OwnerClientId != clientId)
                 {
-                    Debug.Log($"SceneController OnClickSwitchOwner newOwner: {clientId}");
-
                     inSceneObject.NetworkObject.ChangeOwnership(clientId);
                     break;
                 }
@@ -67,6 +63,12 @@ namespace NGOtoGo.Examples.NetworkVariables.NetworkVariablePermissions
         private void OnClientDisconnect(ulong clientId)
         {
             Debug.Log($"SceneController OnClientDisconnect: {clientId}");
+        }
+
+        private void OnDestroy()
+        {
+            networkManager.OnClientConnectedCallback -= OnClientConnected;
+            networkManager.OnClientDisconnectCallback -= OnClientDisconnect;
         }
     }
 }
