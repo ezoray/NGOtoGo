@@ -70,6 +70,8 @@ Each example is run as follows:
 
 [NetworkVariablePermissions](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/NetworkVariables/NetworkVariablePermissions) - Demonstrates the behaviour of network variables when using different read and write permissions and changing object ownership.
 
+[NetworkVariableDictionary](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/NetworkVariables/NetworkVariableDictionary) - Shows how to set up a NetworkVariable dictionary, how to modify it and how to determine inside its change event what changes that have been made.
+
 [NetworkListEvents](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/NetworkLists/NetworkListEvents) - Allows user interaction with a network list to demonstrate the triggering of events.
 
 ###  Notes
