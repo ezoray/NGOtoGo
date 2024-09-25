@@ -47,6 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Examples/NetworkVariables/NetworkVariableDictionary/Scenes/NetworkVariableDictionaryScene.unity
     guid: ea4fdc423062e4c6883b8034853e7807
+  - enabled: 1
+    path: Assets/Examples/Visibility/LimitPlayerObservers/Scenes/LimitPlayerObserversScene.unity
+    guid: cc0ab7d7f3cd94a69a5f8cc09ad0baab
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

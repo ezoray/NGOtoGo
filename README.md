@@ -74,6 +74,8 @@ Each example is run as follows:
 
 [NetworkListEvents](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/NetworkLists/NetworkListEvents) - Allows user interaction with a network list to demonstrate the triggering of events.
 
+[LimitPlayerObservers](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Visibility/LimitPlayerObservers) - Only the client's Player object is spawned on the client (this is currently bugged in NGO 2.0.0).
+
 ###  Notes
 
 If you are using ParrelSync in your own projects and the clone won't connect due to a NetworkConfig mismatch this is most likely due to the NetworkManager's Network Prefab List not always sync'ing with the clone. A quick fix for this is to untick Force Same Prefabs on the original project's NetworkManager.
