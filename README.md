@@ -76,6 +76,8 @@ Each example is run as follows:
 
 [LimitPlayerObservers](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Visibility/LimitPlayerObservers) - Only the client's Player object is spawned on the client (this is currently bugged in NGO 2.0.0).
 
+[PerlinTilemap](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Integration/PerlinTilemap) - Uses a NetworkVariable to share configuration values allowing the host and client to generate identical Perlin-based tilemaps. 
+
 ###  Notes
 
 If you are using ParrelSync in your own projects and the clone won't connect due to a NetworkConfig mismatch this is most likely due to the NetworkManager's Network Prefab List not always sync'ing with the clone. A quick fix for this is to untick Force Same Prefabs on the original project's NetworkManager.
