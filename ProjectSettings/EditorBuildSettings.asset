@@ -53,6 +53,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Examples/Integration/PerlinTilemap/Scenes/PerlinTilemapScene.unity
     guid: 8543b347302bc4f0d939f732d66b8024
+  - enabled: 1
+    path: Assets/Examples/Integration/Lobby/Scenes/MenuScene.unity
+    guid: d91b6af3e8d61449d8c283c6830a4ef0
+  - enabled: 1
+    path: Assets/Examples/Integration/Lobby/Scenes/LobbyScene.unity
+    guid: e10cfe05c44a6483b8ae88e49c91481b
+  - enabled: 1
+    path: Assets/Examples/Integration/Lobby/Scenes/StartScene.unity
+    guid: 280fe5be535614fbbb2e64c781fa977d
+  - enabled: 1
+    path: Assets/Examples/Integration/Lobby/Scenes/GameScene.unity
+    guid: 1b2c1f54da4ef48ed85149837fedee0e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

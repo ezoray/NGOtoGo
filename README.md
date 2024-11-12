@@ -36,7 +36,7 @@ The examples are located in the project hierarchy under `Assets/Examples` where 
 Each example is run as follows:
 
 1. **Load the Example Scene:**
-   - In the original project, open the `Scenes` folder and select the scene. If there are multiple scenes they'll be numbered so select the first.
+   - In the original project, open the `Scenes` folder and select the scene. If there are multiple scenes go with the Start scene.
    - In the clone project, open the scene in the same way.
 
 2. **Running the Example:**
@@ -77,6 +77,8 @@ Each example is run as follows:
 [LimitPlayerObservers](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Visibility/LimitPlayerObservers) - Only the client's Player object is spawned on the client.
 
 [PerlinTilemap](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Integration/PerlinTilemap) - Uses a NetworkVariable to share configuration values allowing the host and client to generate identical Perlin-based tilemaps. 
+
+[Lobby](https://github.com/ezoray/NGOtoGo/tree/main/Assets/Examples/Integration/Lobby) - Creates a lobby type room on the host for other clients to join. Note this does not use Unity's online Lobby service.
 
 ###  Notes
 
